@@ -1,0 +1,64 @@
+button{
+  margin: 0px 10px;
+  background-color: #be8127;
+  border: 0px;
+  padding: 4px;
+  color: #fff;
+  font-size: 18px;
+
+}
+
+img{
+  max-width: 100%;
+}
+
+h4{
+  background-color: darkgray;
+  color: #fff;
+}
+
+.search button {
+  padding: 0px 4px;
+}
+
+.search input {
+  width: 50%;
+}
+
+.Header{
+  background: Gray;
+    padding: 10px;
+
+}
+
+
+.Header li{
+  list-style: none;
+  color: #fff;
+  display: inline-block;
+  width: 50%;
+
+}
+
+.marginbtn img{
+  width: 30%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 28px;
+}
+
+.Content {
+  float: left;
+  width: 35%;
+}
+
+.btnDiv {
+  width: 28%;
+  float: left;
+  padding-top: 77px;
+}
+
+.marginbtn {
+  margin-bottom: 20px;
+  clear: both;
+}
