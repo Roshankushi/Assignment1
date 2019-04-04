@@ -4,6 +4,7 @@ import Search from './Search'
 import ShopingList from './ShopingList';
 import Cart from "./Cart"
 import Footer from "./Footer"
+import Toggler from './Toggler';
 
 
 
@@ -50,9 +51,11 @@ handlechange(data){
 render(){
   return(
     <div>
+      
     <Cart count={this.state.counter}></Cart>
        <Search searchText={this.handlechange}  />
       <ShopingList searchName={this.state.searchQuery} add={this.handleAddClick}delete={this.handleDeleteClick}> </ShopingList> 
+      
 <Footer/>
  
       </div>

@@ -11,7 +11,9 @@ return(
     <div className="marginbtn">
 
 <table>
+<tbody>
   <tr>
+    
     <th><img src={this.props.details.image_url}  /></th>
     <th><h2>{this.props.details.name}</h2>
     <h3>{this.props.details.price}</h3>
@@ -20,7 +22,7 @@ return(
     <th><button type="button" onClick={()=>this.props.add()}>AddCart</button> </th> 
     <th> <button type="button" onClick={()=>this.props.delete()}>DeleteCart</button> </th> 
   </tr>
- 
+  </tbody>
 </table>
      
       
