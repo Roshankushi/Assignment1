@@ -9,18 +9,21 @@ import React, {Component} from 'react'
     render(){
 return(
     <div className="marginbtn">
+
+<table>
+  <tr>
+    <th><img src={this.props.details.image_url}  /></th>
+    <th><h2>{this.props.details.name}</h2>
+    <h3>{this.props.details.price}</h3>
+    Estimated price<h3>{this.props.details.description}</h3>Expected launch
+    </th> 
+    <th><button type="button" onClick={()=>this.props.add()}>AddCart</button> </th> 
+    <th> <button type="button" onClick={()=>this.props.delete()}>DeleteCart</button> </th> 
+  </tr>
+ 
+</table>
      
-       <img src={this.props.details.image_url}  />
-       <div className="Content">
-       <h2>{this.props.details.name}</h2>
-       <h5>{this.props.details.price}<br/>Estimated price</h5>
-       <h6>{this.props.details.description}<br/>Expected launch</h6>
-       </div>
-       <div className="btnDiv">
-           <button type="button" onClick={()=>this.props.add()}>AddCart</button>
-            <button type="button" onClick={()=>this.props.delete()}>DeleteCart</button>
-            
-       </div>
+      
        </div>
 )
     }

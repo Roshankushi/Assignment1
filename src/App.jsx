@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Product from './Product'
 import Search from './Search'
 import ShopingList from './ShopingList';
 import Cart from "./Cart"
+import Footer from "./Footer"
 
 
 
@@ -33,8 +33,10 @@ handleAddClick(e){
 handleDeleteClick(e){
   console.log(e);
   let currentState =this.state;
+  if(this.state.counter <= 0){this.setState(currentState);}else{
   currentState.counter--;
   this.setState(currentState);
+  }
 }
 
 
@@ -51,7 +53,7 @@ render(){
     <Cart count={this.state.counter}></Cart>
        <Search searchText={this.handlechange}  />
       <ShopingList searchName={this.state.searchQuery} add={this.handleAddClick}delete={this.handleDeleteClick}> </ShopingList> 
-
+<Footer/>
  
       </div>
       

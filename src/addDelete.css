@@ -40,12 +40,6 @@ h4{
 
 }
 
-.marginbtn img{
-  width: 30%;
-  float: left;
-  padding-left: 15px;
-  padding-right: 28px;
-}
 
 .Content {
   float: left;
@@ -59,6 +53,108 @@ h4{
 }
 
 .marginbtn {
-  margin-bottom: 20px;
   clear: both;
+}
+
+.marginbtn table th:nth-child(1) {
+  width: 25%;
+}
+
+.marginbtn table th:nth-child(2) {
+  width: 35%;
+}
+
+.marginbtn table th:nth-child(3) {
+  width: 20%;
+}
+
+.marginbtn table th:nth-child(4) {
+  width: 20%;
+}
+
+.marginbtn table h2 {
+  margin: 10px 0px;
+}
+
+.marginbtn table h3 {
+  margin: 10px 0px;
+}
+
+.marginbtn table th {
+  border-right: 1px solid #be8127;
+}
+
+.marginbtn {
+  clear: both;
+  border-top: 1px solid #be8127;
+  border-bottom: 1px solid #be8127;
+}
+
+.Header li:last-child {
+  text-align: right;
+}
+
+.Header li:last-child span {
+  background: #be8127;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.footershop p{
+  margin: 0px;
+    padding: 15px 0px;
+    color: #fff;
+    background: grey;
+    text-align: center;
+}
+
+@media (max-width: 479px) {
+  .marginbtn table th:nth-child(1) {
+    width: 100%;
+  }
+  
+  .marginbtn table th:nth-child(2) {
+    width: 100%;
+  }
+  
+  .marginbtn table th:nth-child(3) {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  
+  .marginbtn table th:nth-child(4) {
+    width: 100%;
+    margin: 10px 0px 30px;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+    
+    tr { }
+    
+    td {
+    /* Behave like a "row" */
+    
+    position: relative;
+    text-align:center;
+    
+    }
+    
+    td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    
+    white-space: nowrap;
+    }
 }
